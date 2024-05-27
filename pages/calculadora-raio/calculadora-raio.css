@@ -11,6 +11,9 @@
     --nav-background: #020617;
     --ancoras-color: #67e8f9;
     --hover-color: #064e3b;
+    --main-color:#172554;
+    --button-color: #a5f3fc;
+    --button-text-color:#0a0a0a;
 }
 
 body {
@@ -23,23 +26,33 @@ body {
     align-items: center;
     gap: 30px;
 }
+main {
+    padding: 50px;
+     width: 300px;
+     background-color: var(--main-color);
+}
 
-nav {
-    background-color: var(--nav-background);
+h1 {
+    color: var(--text-color);
+}
+
+#raio {
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 20px;
     width: fit-content;
-    padding: 16px;
-    border-radius: 22px;
-}
-
-a{
-    color: var(--ancoras-color);
-    text-decoration: none;
-}
-
-a:hover {
+    padding: 10px;
+    background-color: var(--button-color);
+    font-weight: 700;
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 20px;
     cursor: pointer;
 }
 
-ul, li {
-    list-style: none;
+button:hover {
+    background-color: var(--hover-color);
+    color: var(--button-text-color);
 }
